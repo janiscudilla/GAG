@@ -18,7 +18,7 @@ gem 'bootstrap-on-rails'
 gem 'less-rails'
 gem 'therubyracer', platform: :ruby
 gem "rails_admin", "~> 0.6.1"
-
+gem "font-awesome-less"
 
 group :development do
     gem "erb2haml"
