@@ -1,4 +1,5 @@
-%h1
-  test
+= render "layouts/navbar"
 
-=link_to "Login", new_user_session_path
+.container
+  .row
+    =link_to "Login", new_user_session_path, class: "btn btn-large btn-primary"
