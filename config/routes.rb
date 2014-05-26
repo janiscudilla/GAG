@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       root to: 'dashboards#index', as: 'authenticated_root'
   end
 
+
   #unauthenticated_user
   root 'landing#index'
 
