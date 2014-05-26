@@ -21,29 +21,29 @@ gem "rails_admin", "~> 0.6.1"
 gem "font-awesome-less"
 
 group :development do
-    gem "erb2haml"
+  gem "erb2haml"
+  gem "quiet_assets"
 end
 
 
 group :test, :development do
-    gem "rspec-rails"
-    gem "capybara"
-    gem 'database_cleaner'
-    gem 'cucumber-rails', require: false
-    gem 'factory_girl_rails'
+  gem "rspec-rails"
+  gem "capybara"
+  gem 'database_cleaner'
+  gem 'cucumber-rails', require: false
+  gem 'factory_girl_rails'
 end
 
-
 group :test do
-    gem 'faker'
-    gem 'guard-rspec'
-    gem 'launchy'
+  gem 'faker'
+  gem 'guard-rspec'
+  gem 'launchy'
 end
 
 group :doc do
-    gem 'sdoc', '~> 0.4.0'
+  gem 'sdoc', '~> 0.4.0'
 end
 
 group :development do
-    gem 'spring'
+ gem 'spring'
 end

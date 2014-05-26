@@ -1,5 +1,3 @@
-=render "layouts/navbar"
-
 .container
   .row
     .sign-in-form
@@ -12,9 +10,6 @@
             = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
           .form-actions
             = f.button :submit, "Sign in"
-
         - if devise_mapping.omniauthable?
           - resource_class.omniauth_providers.each do |provider|
-            = link_to omniauth_authorize_path(resource_name, provider), class: "btn btn-facebook" do
-              %i.fa.fa-facebook
-              Log in with Facebook
+            = link_to "<i class='icon-facebook'></i> #{provider.to_s.titleize}".html_safe, omniauth_authorize_path(resource_name, provider), class: "btn btn-primary btn-block
