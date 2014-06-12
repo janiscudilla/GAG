@@ -2,3 +2,14 @@
   .row
     %h1 Dashboard
 
+    - if @vehicles.any?
+      - @vehicles.each do |vehicle|
+        = vehicle.make
+        = vehicle.model
+        = vehicle.year
+      
+    - else
+      %span
+        Walang laman ang mga vehicles mo.
+        = link_to 'Gawa ka plez.', new_vehicle_path
+
